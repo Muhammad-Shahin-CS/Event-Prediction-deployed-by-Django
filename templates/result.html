@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body bgcolor=lightblue>
+
+    <center>
+
+        <h1>  PREDICTION :  </h1>
+    
+{% load static %}
+    {%if ans == 0%}
+    <h1>Iris-setosa</h1>
+
+<img src="{% static 'setosa.jpg' %}" alt="My image">
+
+        {%elif ans == 1%}
+    <h1>Iris-versicolor</h1>
+
+<img src="{% static 'verci.jpg' %}" alt="My image">
+
+    {%else%}
+    <h1>Iris-virginica</h1>
+<img src="{% static 'flower1.jpg' %}" alt="My image">
+
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+</html>
